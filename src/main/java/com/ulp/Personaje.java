@@ -82,7 +82,7 @@ class Personaje extends ObjetoMovil{
             dañoCalculado += this.arma.getPotencia(); 
         }
 
-        System.out.println(" ⚔️ " + this.nombre + " inflige " + dañoCalculado + " de daño a " + otroPersonaje.getNombre());
+        System.out.println(this.nombre + " inflige " + dañoCalculado + " de daño a " + otroPersonaje.getNombre());
         
         otroPersonaje.recibirDanio(dañoCalculado);
     }
