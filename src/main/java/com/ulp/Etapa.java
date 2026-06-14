@@ -83,7 +83,6 @@ public class Etapa {
             System.out.println("Debes luchar contra " + enemigoDeTurno.getNombre() + "!");
             System.out.println("(Enemigo comun " + (this.enemigoActual + 1) + " de " + this.enemigosComunes.size() + ")");
 
-            // ACA SE VE LA DEPENDENCIA PORQUE MI CLASE ETAPA CREA/USA LA CLASE COMBATE
             Combate pelea = new Combate(heroe, enemigoDeTurno,1);
             pelea.pelearPorTurnos(); // Pelean
 
@@ -100,7 +99,6 @@ public class Etapa {
             System.out.println(" Derrotaste a todos los esbirros. Ahora viene el jefe de la etapa");
             System.out.println(" Enfrentas a: " + this.enemigoFinal.getNombre());
 
-            // ACA SE VE LA DEPENDENCIA PORQUE MI CLASE ETAPA CREA/USA LA CLASE COMBATE
             Combate peleaFinalDeEtapa = new Combate(heroe, this.enemigoFinal);
             peleaFinalDeEtapa.pelearPorTurnos();
 
